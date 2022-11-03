@@ -1,5 +1,7 @@
+import PricePlan from "./components/PricePlan/PricePlan";
+
 const App = () => {
-  return <></>;
+  return <PricePlan />;
 };
 
 export default App;
