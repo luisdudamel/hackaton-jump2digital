@@ -19,29 +19,48 @@ const PricePlan = ({
     <PricePlanStyled className={itemClass}>
       <PricePlanImage
         alt="Person sitting with arms opened"
-        src="/img/plan-images/chilling.svg"
+        src={`/img/plan-images/${type}.svg`}
         height={80}
-        width={205}
       ></PricePlanImage>
-      <PlanHeadingContainer>
+      <PlanHeadingContainer
+        className={`price__plan--${type.toLowerCase()}__header`}
+      >
         <PlanTypeSubheading>{type}</PlanTypeSubheading>
-        <PlanPriceHeading>${price}</PlanPriceHeading>
+        <PlanPriceHeading>
+          {type !== "Starter" ? `$${price}` : price}
+        </PlanPriceHeading>
         <PlanPeriodicity>per {period}</PlanPeriodicity>
       </PlanHeadingContainer>
 
       <PlanPerks>
         {includes.map((perk, index) => {
           return (
-            <PlanPerkIncluded key={index}>
-              <img src="/img/icons/check.svg" alt="Check icon" />
+            <PlanPerkIncluded
+              className={`price__plan--${type.toLowerCase()}--includedPerk`}
+              key={index}
+            >
+              <img
+                src={`/img/icons/check-${
+                  type !== "Pro" ? "dark" : "light"
+                }.svg`}
+                alt="Check icon"
+              />
               <p>{perk}</p>
             </PlanPerkIncluded>
           );
         })}
         {excludes.map((perk, index) => {
           return (
-            <PlanPerkNotIncluded key={index + includes.length}>
-              <img src="/img/icons/check.svg" alt="Check icon" />
+            <PlanPerkNotIncluded
+              className={`price__plan--${type.toLowerCase()}--notIncludedPerk`}
+              key={index + includes.length}
+            >
+              <img
+                src={`/img/icons/check-${
+                  type !== "Pro" ? "dark" : "light"
+                }.svg`}
+                alt="Check icon"
+              />
               <p>{perk}</p>
             </PlanPerkNotIncluded>
           );

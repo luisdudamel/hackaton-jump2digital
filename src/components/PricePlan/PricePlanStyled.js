@@ -14,7 +14,7 @@ export const PricePlanStyled = styled.article`
   flex: none;
   order: 1;
   flex-grow: 1;
-  color: var(--light-text);
+
   justify-content: center;
 `;
 
@@ -29,7 +29,7 @@ export const PlanTypeSubheading = styled.h3`
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  color: var(--light-text);
+
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -42,7 +42,7 @@ export const PlanPriceHeading = styled.h2`
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: var(--light-text);
+
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -57,7 +57,7 @@ export const PlanPeriodicity = styled.h3`
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  color: var(--light-text);
+
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -96,7 +96,7 @@ export const PlanPerkIncluded = styled.li`
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: #ffffff;
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -121,10 +121,8 @@ export const PlanPerkNotIncluded = styled.li`
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: #ffffff;
     flex: none;
     order: 1;
     flex-grow: 0;
-    opacity: 0.5;
   }
 `;

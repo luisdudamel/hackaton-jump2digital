@@ -20,7 +20,7 @@ const SubscriptionPanel = () => {
         {plansList.map((plan, index) => {
           return (
             <PricePlan
-              itemClass={`${plan[0]}__plan`}
+              itemClass={`price__plan--${plan[0]}`}
               key={index}
               plan={plan[1]}
             />
