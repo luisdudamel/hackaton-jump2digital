@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --passWithNoTests",
+    "test": "react-scripts test",
     "test:watch": "npm run test --watchAll",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject",
@@ -41,5 +41,12 @@
   },
   "devDependencies": {
     "husky": "^8.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.jsx",
+      "src/**/*.js",
+      "!src/App.jsx"
+    ]
   }
 }
