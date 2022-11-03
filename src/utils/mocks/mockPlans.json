@@ -1,0 +1,19 @@
+{
+  "ultra": {
+    "type": "Ultra",
+    "price": 100,
+    "period": "month",
+    "button": "Get Started",
+    "includes": [
+      "Full courses library",
+      "A new daily meditation",
+      "Access to the meditation guru"
+    ],
+    "excludes": [
+      "Guided meditations",
+      "Cooking recipes",
+      "Sleep podcasts and exercises",
+      "Mindfulness exercises"
+    ]
+  }
+}

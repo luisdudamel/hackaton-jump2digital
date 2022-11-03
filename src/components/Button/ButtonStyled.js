@@ -19,7 +19,12 @@ const StyledButton = styled.button`
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
-  color: white;
+  color: var(--light-text);
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 export default StyledButton;
