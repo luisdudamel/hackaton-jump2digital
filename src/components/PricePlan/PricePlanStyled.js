@@ -6,6 +6,7 @@ export const PricePlanStyled = styled.article`
   align-items: flex-start;
   padding: 40px;
   gap: 16px;
+  height: 524px;
   width: 284.33px;
   background: #5a45f2;
   border: 2px solid var(--dark-text);
@@ -14,6 +15,7 @@ export const PricePlanStyled = styled.article`
   order: 1;
   flex-grow: 1;
   color: var(--light-text);
+  justify-content: center;
 `;
 
 export const PlanHeadingContainer = styled.div``;
