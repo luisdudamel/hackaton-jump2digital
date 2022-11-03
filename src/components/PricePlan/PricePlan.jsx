@@ -8,7 +8,7 @@ import {
   PricePlanStyled,
 } from "./PricePlanStyled";
 
-const PricePlan = ({ planType, planPrice, planPeriodicity }) => {
+const PricePlan = ({ plan }) => {
   return (
     <PricePlanStyled>
       <PricePlanImage
@@ -18,13 +18,11 @@ const PricePlan = ({ planType, planPrice, planPeriodicity }) => {
         width={205}
       ></PricePlanImage>
       <PlanHeadingContainer>
-        <PlanTypeSubheading>{planType}</PlanTypeSubheading>
-        <PlanPriceHeading>${planPrice}</PlanPriceHeading>
-        <PlanPeriodicity>
-          per {planPeriodicity === "year" ? `yearly` : `month`}
-        </PlanPeriodicity>
+        <PlanTypeSubheading>{plan.type}</PlanTypeSubheading>
+        <PlanPriceHeading>${plan.price}</PlanPriceHeading>
+        <PlanPeriodicity>per {plan.period}</PlanPeriodicity>
       </PlanHeadingContainer>
-      <Button text={"Become a Pro"} />
+      <Button text={plan.button} />
     </PricePlanStyled>
   );
 };
