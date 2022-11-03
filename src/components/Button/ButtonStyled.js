@@ -20,6 +20,11 @@ const StyledButton = styled.button`
   font-size: 14px;
   line-height: 16px;
   color: var(--light-text);
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
 `;
 
 export default StyledButton;

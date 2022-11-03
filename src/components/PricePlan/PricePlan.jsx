@@ -2,13 +2,18 @@ import Button from "../Button/Button";
 import {
   PlanHeadingContainer,
   PlanPeriodicity,
+  PlanPerkIncluded,
+  PlanPerkNotIncluded,
+  PlanPerks,
   PlanPriceHeading,
   PlanTypeSubheading,
   PricePlanImage,
   PricePlanStyled,
 } from "./PricePlanStyled";
 
-const PricePlan = ({ plan }) => {
+const PricePlan = ({
+  plan: { type, price, period, includes, excludes, button },
+}) => {
   return (
     <PricePlanStyled>
       <PricePlanImage
@@ -18,11 +23,31 @@ const PricePlan = ({ plan }) => {
         width={205}
       ></PricePlanImage>
       <PlanHeadingContainer>
-        <PlanTypeSubheading>{plan.type}</PlanTypeSubheading>
-        <PlanPriceHeading>${plan.price}</PlanPriceHeading>
-        <PlanPeriodicity>per {plan.period}</PlanPeriodicity>
+        <PlanTypeSubheading>{type}</PlanTypeSubheading>
+        <PlanPriceHeading>${price}</PlanPriceHeading>
+        <PlanPeriodicity>per {period}</PlanPeriodicity>
       </PlanHeadingContainer>
-      <Button text={plan.button} />
+
+      <PlanPerks>
+        {includes.map((perk, index) => {
+          return (
+            <PlanPerkIncluded key={index}>
+              <img src="/img/icons/check.svg" alt="Check icon" />
+              <p>{perk}</p>
+            </PlanPerkIncluded>
+          );
+        })}
+        {excludes.map((perk, index) => {
+          return (
+            <PlanPerkNotIncluded key={index + includes.length}>
+              <img src="/img/icons/check.svg" alt="Check icon" />
+              <p>{perk}</p>
+            </PlanPerkNotIncluded>
+          );
+        })}
+      </PlanPerks>
+
+      <Button text={button} />
     </PricePlanStyled>
   );
 };
