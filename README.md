@@ -42,6 +42,9 @@ Price plan cards panel for users to get info and/or subscribe to services.
 
     #Running command
     npm start
+
+    #Build command
+    npm run build
 ```
 
 ```shell
