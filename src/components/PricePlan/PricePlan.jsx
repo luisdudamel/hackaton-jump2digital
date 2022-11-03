@@ -13,9 +13,10 @@ import {
 
 const PricePlan = ({
   plan: { type, price, period, includes, excludes, button },
+  itemClass,
 }) => {
   return (
-    <PricePlanStyled>
+    <PricePlanStyled className={itemClass}>
       <PricePlanImage
         alt="Person sitting with arms opened"
         src="/img/plan-images/chilling.svg"
