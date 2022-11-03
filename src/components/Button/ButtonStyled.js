@@ -19,7 +19,7 @@ const StyledButton = styled.button`
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
-  color: white;
+  color: var(--light-text);
 `;
 
 export default StyledButton;

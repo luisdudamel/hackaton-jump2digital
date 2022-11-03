@@ -1,6 +1,13 @@
-import { PricePlanImage, PricePlanStyled } from "./PricePlanStyled";
+import {
+  PlanHeadingContainer,
+  PlanPeriodicity,
+  PlanPriceHeading,
+  PlanTypeSubheading,
+  PricePlanImage,
+  PricePlanStyled,
+} from "./PricePlanStyled";
 
-const PricePlan = () => {
+const PricePlan = ({ planType, planPrice, planPeriodicity }) => {
   return (
     <PricePlanStyled>
       <PricePlanImage
@@ -9,6 +16,13 @@ const PricePlan = () => {
         height={80}
         width={205}
       ></PricePlanImage>
+      <PlanHeadingContainer>
+        <PlanTypeSubheading>{planType}</PlanTypeSubheading>
+        <PlanPriceHeading>${planPrice}</PlanPriceHeading>
+        <PlanPeriodicity>
+          per {planPeriodicity === "year" ? `yearly` : `month`}
+        </PlanPeriodicity>
+      </PlanHeadingContainer>
     </PricePlanStyled>
   );
 };

@@ -17,12 +17,12 @@ Price plan cards panel for users to get info and/or subscribe to services.
     
   * Price Plan
     * Render an image
-    * Render a text
+    * Render a text received
     * Render a button component
     * Pass a received function to button component
   
   * Subscription Page
-    * Render 3 price plan components
+    * Render 3 price plan components, giving each one a text
     * Render an Information Form component on function call
     * Pass a function to every Price Plan component
 
