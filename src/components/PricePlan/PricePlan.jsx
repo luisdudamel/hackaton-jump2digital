@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import {
   PlanHeadingContainer,
   PlanPeriodicity,
@@ -23,6 +24,7 @@ const PricePlan = ({ planType, planPrice, planPeriodicity }) => {
           per {planPeriodicity === "year" ? `yearly` : `month`}
         </PlanPeriodicity>
       </PlanHeadingContainer>
+      <Button text={"Become a Pro"} />
     </PricePlanStyled>
   );
 };
