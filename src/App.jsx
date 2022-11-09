@@ -1,8 +1,11 @@
-import PricePlan from "./components/PricePlan/PricePlan";
-import plans from "./utils/plans.json";
+import SubscriptionPanel from "./components/SubscriptionPanel/SubscriptionPanel";
 
 const App = () => {
-  return <PricePlan plan={plans.pro} />;
+  return (
+    <>
+      <SubscriptionPanel />
+    </>
+  );
 };
 
 export default App;

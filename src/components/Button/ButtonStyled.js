@@ -9,7 +9,7 @@ const StyledButton = styled.button`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 16px;
+  margin-top: -15px;
   gap: 8px;
 
   width: 204.33px;

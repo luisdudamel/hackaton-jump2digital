@@ -6,7 +6,7 @@ Price plan cards panel for users to get info and/or subscribe to services.
 ## Components
   * Button
   * Price Plan (card)
-  * Subscription Page
+  * Subscriptions Panel
   * Information Form
   * App
 
@@ -22,7 +22,7 @@ Price plan cards panel for users to get info and/or subscribe to services.
     * Pass a received function to button component
     * Render a list of items based on data received
   
-  * Subscription Page
+  * Subscriptions Panel
     * Render 3 price plan components, giving each one a text and a list of items.
     * Render an Information Form component on function call
     * Pass a function to every Price Plan component
@@ -32,7 +32,7 @@ Price plan cards panel for users to get info and/or subscribe to services.
     * Render a button component
   
   * App
-    * Render a Subscription Page component.
+    * Render a Subscriptions Panel component.
 
 
 ## Commands
