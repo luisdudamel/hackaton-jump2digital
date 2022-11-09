@@ -86,4 +86,5 @@ export const SubscriptionPanelContainer = styled.main`
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  align-items: center;
 `;
