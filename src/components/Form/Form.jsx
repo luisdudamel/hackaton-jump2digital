@@ -10,14 +10,17 @@ const Form = ({ submitForm, planType }) => {
   return (
     <FormStyledContainer>
       <FormStyled onSubmit={submitRegister}>
-        <i class="fa-solid fa-circle-xmark form__closeButton"></i>
+        <i
+          onClick={submitForm}
+          className="fa-solid fa-circle-xmark form__closeButton"
+        ></i>
         <h4>JOIN OUR {planType} PLAN</h4>
         <label hidden={true} htmlFor="email">
           Email
         </label>
         <input
           className="form__email"
-          type="text"
+          type="email"
           placeholder="Enter your email"
           id="email"
         />

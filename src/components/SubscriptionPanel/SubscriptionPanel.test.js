@@ -11,7 +11,7 @@ describe("Given a SubscriptionPanel function", () => {
     test("Then it should render a heading with the text `Ultra`", () => {
       const expectedPlanText = "Ultra";
 
-      jest.spyOn(React, "useState").mockImplementation(useStateMock);
+      jest.spyOn(React, "useState").mockImplementationOnce(useStateMock);
       render(<SubscriptionPanel />);
       const planType = screen.getByRole("heading", { name: expectedPlanText });
 

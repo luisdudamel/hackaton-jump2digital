@@ -9,6 +9,12 @@ export const FormStyledContainer = styled.div`
   align-items: center;
   z-index: 1;
   background-color: rgba(103, 122, 100, 0.4);
+
+  @media (max-width: 900px) {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const FormStyled = styled.form`
@@ -18,6 +24,10 @@ export const FormStyled = styled.form`
   width: 400px;
   align-items: center;
   border-radius: 8px;
+
+  @media (max-width: 900px) {
+    margin: 10px;
+  }
 
   button {
     order: 0;
@@ -47,6 +57,10 @@ export const FormStyled = styled.form`
       border-radius: 50%;
       color: red;
       cursor: pointer;
+
+      @media (max-width: 900px) {
+        right: 0px;
+      }
     }
   }
 `;
