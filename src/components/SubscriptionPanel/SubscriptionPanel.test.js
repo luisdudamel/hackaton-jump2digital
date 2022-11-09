@@ -34,9 +34,11 @@ describe("Given a SubscriptionPanel function", () => {
         name: expectedButtonText,
       });
       userEvent.click(starterPlanButton);
-      const expectedForm = screen.getByRole("form");
+      const emailForm = screen.getByRole("form");
+      const emailFormHeading = screen.getByText(expectedFormHeading);
 
-      expect(expectedForm).toBeInTheDocument();
+      expect(emailForm).toBeInTheDocument();
+      expect(emailFormHeading).toBeInTheDocument();
     });
   });
 });
