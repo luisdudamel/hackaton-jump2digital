@@ -14,7 +14,6 @@ export const PricePlanStyled = styled.article`
   flex: none;
   order: 1;
   flex-grow: 1;
-
   justify-content: center;
 `;
 
