@@ -25,6 +25,15 @@ const StyledButton = styled.button`
   order: 3;
   align-self: stretch;
   flex-grow: 0;
+  transition: all 0.2s;
+
+  :active {
+    filter: invert(1);
+  }
+  :hover {
+    box-shadow: rgb(0 0 0 / 12%) 2px 2px 3px 0px,
+      rgb(0 0 0 / 24%) 0px 1px 4px 2px;
+  }
 `;
 
 export default StyledButton;
