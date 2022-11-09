@@ -15,5 +15,53 @@
       "Sleep podcasts and exercises",
       "Mindfulness exercises"
     ]
+  },
+
+  "starter": {
+    "type": "Starter",
+    "price": "Free",
+    "period": "month",
+    "button": "Get Started",
+    "includes": [
+      "Full courses library",
+      "A new daily meditation",
+      "Access to the meditation guru"
+    ],
+    "excludes": [
+      "Guided meditations",
+      "Cooking recipes",
+      "Sleep podcasts and exercises",
+      "Mindfulness exercises"
+    ]
+  },
+  "pro": {
+    "type": "Pro",
+    "price": 49,
+    "period": "month",
+    "button": "Become a Pro",
+    "includes": [
+      "Full courses library",
+      "A new daily meditation",
+      "Access to the meditation guru",
+      "Sleep podcasts and exercises",
+      "Mindfulness exercises"
+    ],
+    "excludes": ["Guided meditations", "Cooking recipes"]
+  },
+  "teams": {
+    "type": "Teams",
+    "price": 99,
+    "period": "month",
+    "button": "Get Teams",
+    "includes": [
+      "Full courses library",
+      "A new daily meditation",
+      "Access to the meditation guru",
+      "Sleep podcasts and exercises",
+      "Mindfulness exercises",
+      "Guided meditations",
+      "Cooking recipes"
+    ],
+    "excludes": []
   }
 }
