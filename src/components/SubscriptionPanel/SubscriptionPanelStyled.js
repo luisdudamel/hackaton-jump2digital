@@ -11,6 +11,13 @@ export const SubscriptionPanelStyled = styled.section`
   width: 1045px;
   height: 684px;
 
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 30px;
+    height: auto;
+  }
+
   .price {
     &__plan {
       &--starter {
@@ -87,4 +94,21 @@ export const SubscriptionPanelContainer = styled.main`
   align-content: center;
   justify-content: center;
   align-items: center;
+
+  /* @media (max-width: 900px) {
+    height: 100%;
+  } */
+`;
+
+export const SubscriptionLayout = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    align-items: flex-start;
+    padding-bottom: 50px;
+  }
 `;

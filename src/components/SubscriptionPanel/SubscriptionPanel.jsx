@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import plans from "../../utils/plans.json";
 import PricePlan from "../PricePlan/PricePlan";
 import {
+  SubscriptionLayout,
   SubscriptionPanelContainer,
   SubscriptionPanelStyled,
 } from "./SubscriptionPanelStyled";
@@ -16,17 +17,19 @@ const SubscriptionPanel = () => {
 
   return (
     <SubscriptionPanelContainer>
-      <SubscriptionPanelStyled>
-        {plansList.map((plan, index) => {
-          return (
-            <PricePlan
-              itemClass={`price__plan--${plan[0]}`}
-              key={index}
-              plan={plan[1]}
-            />
-          );
-        })}
-      </SubscriptionPanelStyled>
+      <SubscriptionLayout>
+        <SubscriptionPanelStyled>
+          {plansList.map((plan, index) => {
+            return (
+              <PricePlan
+                itemClass={`price__plan--${plan[0]}`}
+                key={index}
+                plan={plan[1]}
+              />
+            );
+          })}
+        </SubscriptionPanelStyled>
+      </SubscriptionLayout>
     </SubscriptionPanelContainer>
   );
 };
