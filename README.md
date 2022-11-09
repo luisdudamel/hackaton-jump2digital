@@ -14,14 +14,31 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
+ <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&logoWidth=30" />
+  
+
+ 
 
 </div>
 
+<div align="center">
+  
 ## Usage
+<img src="https://s1.gifyu.com/images/hack2digitalLR_1.gif" />
+ </div>
+  
+  
+## [Deployed Website](https://jump2digital-hackaton-luis-dudamel.netlify.app/)
 
-<img src="https://i.imgur.com/XfcPwjn.gif" width="200"/>
+## Project info
 
-[![Screen-Recording-2022-11-09-at-19.38.51.gif](https://s1.gifyu.com/images/Screen-Recording-2022-11-09-at-19.38.51.gif)](https://gifyu.com/image/SEV9P)
+**Mobile view: @900px**
+
+**Technologies used:**
+  - Javascript
+  - React
+  - Styled Components
+  - Jest
 
 ## Components
   * Button
