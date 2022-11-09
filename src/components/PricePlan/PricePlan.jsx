@@ -14,6 +14,7 @@ import {
 const PricePlan = ({
   plan: { type, price, period, includes, excludes, button },
   itemClass,
+  openForm,
 }) => {
   return (
     <PricePlanStyled className={itemClass}>
@@ -67,7 +68,7 @@ const PricePlan = ({
         })}
       </PlanPerks>
 
-      <Button text={button} />
+      <Button action={openForm} text={button} />
     </PricePlanStyled>
   );
 };
