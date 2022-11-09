@@ -9,7 +9,7 @@ const Form = ({ submitForm, planType }) => {
 
   return (
     <FormStyledContainer>
-      <FormStyled onSubmit={submitRegister}>
+      <FormStyled name="email subscription" onSubmit={submitRegister}>
         <i
           onClick={submitForm}
           className="fa-solid fa-circle-xmark form__closeButton"

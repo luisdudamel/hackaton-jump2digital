@@ -4,7 +4,7 @@ import Form from "./Form";
 
 describe("Given a Form function", () => {
   describe("When invoked with the `ULTRA` plan", () => {
-    test("Then it should render a form with a heading with the text `JOIN OUR ULTRA PLAN`", () => {
+    test("Then it should render a heading with the text `JOIN OUR ULTRA PLAN`", () => {
       const expectedFormHeading = "JOIN OUR ULTRA PLAN";
       const currentPlan = "ULTRA";
 
