@@ -21,7 +21,7 @@
   
 ## Usage
 <img src="https://s1.gifyu.com/images/hack2digitalLR_1.gif" />
- </div>
+</div>
   
   
 ## [Deployed Website](https://jump2digital-hackaton-luis-dudamel.netlify.app/)
