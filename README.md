@@ -7,9 +7,11 @@
 ------------
 <div align="center">
 
+
+
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
 
-
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/luisdudamel/hackaton-jump2digital/Audit)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=coverage)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital) 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=luisdudamel_hackaton-jump2digital&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=luisdudamel_hackaton-jump2digital)
